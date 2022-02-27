@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>admission page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 style="color:pink" align="center"><STRONG>Karunya University</STRONG></h1><hr>
+        <table  width="100%">
+            <tr align="center">
+                <td><a href="index.html">About us</a>
+                </td>
+                <td>|</td>
+                <td><a href=" second page.html">Admission</a>
+                </td>
+                <td>|</td>
+                <td><a href="Third page.html">Academic calender</a>
+                </td><td>|</td>
+                <td>
+                    search <input type="search" placeholder="search here.."><!-- comment -->
+                </td>
+                
+            </tr>
+        </table><hr>
+        <form action="server.php" method="post">
+            <fieldset>
+                <legend align="center" style="color: burlywood">Application Form</legend>
+                <table align="center">
+                    <tr>
+                        <td>Name:</td><td><input type="text"  placeholder="Enter your name" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td>Application no:</td><td><input type="text"  placeholder="URK19CS1124" maxlength="12" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td><td><input type="password"  placeholder="*********" pattern="{8,}" required></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td><td><input type="date"  required></td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td><td><input type="number"   required></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile number:</td><td><input type="tel"  placeholder="Enter mobile number" required pattern="{0-9}{10}"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td><td><input type="Email"  placeholder="Sample@gmai.com"  required></td>
+                    </tr>
+                    <tr>
+                        <td >Gender: </td>
+                        <td ><input type="radio" id="a" name="gender" value="male"><label for="a">male</label><input type="radio" id="b" name="gender" value="female"><label for="b">female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td><td> <textarea placeholder="Enter brief address"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td>Languages known:</td><td><input type="checkbox" id="a" name="Laguage" value="English"><label for="a"> English</label></td><td><input type="checkbox" id="b" name="Language" value="Tamil"><label for="b"> Tamil</label></td><td><input type="checkbox" id="c" name="Language" value="Telugu"><label for="c">Telugu</label><br></td><td><input type="checkbox" id="d" name="Language" value="Hindi"><label for="d"> Hindi</label><br></td>
+                    </tr>
+                    <tr>
+                        <td>Select course:</td><td><select>
+    <option >Computer Science Engineering </option>
+    <option >Mechanical Engineering</option>
+    <option >Electronics and Communications Engineering</option>
+    <option >Agricultural Engineering</option>
+  </select></td>
+                    </tr>
+                    <tr>
+                        <td>Upload Photo</td><td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td></td><td><progress max="100" ></progress></td>
+                    </tr>
+                    <tr align="center">
+                        <td><input type="submit" value="submit"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+        </form>
+    </body>
+</html>
